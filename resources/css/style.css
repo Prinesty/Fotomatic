@@ -1,0 +1,222 @@
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  line-height: 1;
+}
+
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #c6c1c1;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  height: 85px;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+
+header .logo {
+  flex-grow: 1;
+  margin-left: 30px;
+  padding: 0.75rem,
+}
+
+nav a {
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #4A4A4A;
+  margin-right: 30px;
+  padding: 0.75rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header .icon {
+  width: 1rem;
+}
+
+.main-content {
+  position: relative;
+}
+
+#sign-up-section {
+  background-image: url("../images/banner-landingpage.jpg");
+  display: flex;
+  justify-content: flex-start;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: flex-start;
+  height: 43.5rem;
+}
+
+#sign-up-cta {
+  position: relative;
+  top: 16rem;
+  left: 10%;
+  padding: 0 5rem 2.5rem 5rem;
+  border: solid 1px #979797;
+  border-radius: 4px;
+  background-color: #9dc20b;
+}
+
+.center {
+  text-align: center;
+}
+
+#sign-up-cta .content {
+  width: 25.625rem;
+  margin-top: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: white;
+  }
+
+#sign-up-cta .header .striking {
+  font-size: 3.125rem;
+  font-family: "Rubik", sans-serif;
+}
+
+#sign-up-cta .header .cursive {
+  font-size: 2rem;
+  font-family: "Damion", cursive;
+  margin-top: 2rem;
+}
+
+#sign-up-cta .email span {
+  font-size: 1.25rem;
+  font-family: Roboto;
+  margin-top: 0.75rem;
+}
+
+#sign-up-cta .email .button {
+  width: 408px;
+  background-color: #4A4A4A;
+  border-radius: 4px;
+  height: 64px;
+  padding-top: 1.625rem;
+  margin-top: 1.625rem;
+}
+
+#sign-up-cta span strong {
+    font-weight: bold;
+  }
+
+#features-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f3f3f3;
+  padding: 4rem 5%;
+}
+
+.feature {
+  flex: 1;
+  background-color: white;
+  padding: 2rem;
+  margin: 0 1.2rem;
+}
+
+.feature .image-container {
+  height: 65%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.feature .content {
+  line-height: 1.2;
+  margin-top: 2.5rem;
+  height: 7.2rem;
+}
+
+.feature h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #4A4A4A;
+  padding-bottom: 0.5rem;
+}
+
+.feature h3 {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #4A4A4A;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+}
+
+#filters-section {
+  background-color: #4A4A4A;
+  color: white;
+}
+
+#filters-section .content h2 {
+  opacity: 100%;
+  font-size: 2.25rem;
+  font-weight:bold;
+  padding-top: 4rem;
+}
+
+#filters-section .content h3 {
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1.4;
+  padding-bottom: 5rem;
+}
+
+.images-container {
+  display: flex;
+  padding: 0 1% 4rem 1%;
+}
+
+#quotes-section {
+  padding: 5rem 0;
+}
+
+#quotes-section .quote {
+  font-size: 1.875rem;
+  line-height: 1.1;
+  font-family: "Palatino", serif;
+  font-style: italic;
+  margin-right: 1.875rem;
+  color: #4A4A4A;
+}
+
+#quotes-section .quote-citation {
+  height: 1.875rem;
+}
+
+footer {
+  background-color: #9B9B9B;
+  padding: 1.5rem 2rem;
+}
+
+footer .content {
+  display: flex;
+  font-size: 0.75rem;
+  color: white;
+}
+
+footer .copyright {
+  flex-grow: 1;
+}

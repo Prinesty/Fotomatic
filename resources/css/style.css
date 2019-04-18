@@ -1,3 +1,4 @@
+/* HTML and Body */
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -7,6 +8,7 @@ body {
   line-height: 1;
 }
 
+/* Header */
 header {
   position: fixed;
   z-index: 1;
@@ -18,7 +20,7 @@ header {
 header .content {
   display: flex;
   align-items: center;
-  height: 85px;
+  padding: 1.875rem;
 }
 
 header nav ul {
@@ -28,16 +30,16 @@ header nav ul {
 
 header .logo {
   flex-grow: 1;
-  margin-left: 30px;
-  padding: 0.75rem,
+}
+
+nav li {
+  padding-left: 3.125rem;
 }
 
 nav a {
   line-height: 1.6;
   font-size: 1rem;
   color: #4A4A4A;
-  margin-right: 30px;
-  padding: 0.75rem;
 }
 
 a {
@@ -49,6 +51,9 @@ header .icon {
   width: 1rem;
 }
 
+/* Main Content*/
+
+/* banner */
 .main-content {
   position: relative;
 }
@@ -117,6 +122,7 @@ header .icon {
     font-weight: bold;
   }
 
+/* Featured Section*/
 #features-section {
   display: flex;
   justify-content: space-between;
@@ -165,6 +171,7 @@ header .icon {
   max-width: 100%;
 }
 
+/* Filter Section */
 #filters-section {
   background-color: #4A4A4A;
   color: white;
@@ -189,6 +196,7 @@ header .icon {
   padding: 0 1% 4rem 1%;
 }
 
+/*Quotes Section*/
 #quotes-section {
   padding: 5rem 0;
 }
@@ -206,6 +214,8 @@ header .icon {
   height: 1.875rem;
 }
 
+
+/* Footer */
 footer {
   background-color: #9B9B9B;
   padding: 1.5rem 2rem;

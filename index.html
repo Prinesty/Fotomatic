@@ -11,27 +11,26 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <div class="content">
-        <nav id="desktop">
+    <header id="desktop">
+      <div class="content flex-row">
+        <h1><a href="index.html" class="logo">FOTOMATIC</a></h1>
+        <nav>
           <ul>
-            <li><a href="index.html" class="logo">FOTOMATIC</a></li>
             <li><a href="#">Product detail</a></li>
             <li><a href="#">About us</a></li>
             <li><a href="https://www.instagram.com/" target="_blank">Follow us<img class="icon" src="./resources/images/instagram.png"></a></li>
           </ul>
         </nav>
-        <nav id="tablet">
+      </div>
+    </header>
+    <header id="mobile">
+      <div class="content flex-row">
+        <h1><a class="logo1" href="index.html"><img src="./resources/images/ic-logo.svg"></a></h1>
+        <nav>
           <ul>
-            <li><a href="#" class="button">Join us</a></li>
-          </ul>
-        </nav>
-        <nav id="mobile">
-          <ul>
-            <li><a href="index.html"><img src="./resources/images/ic-logo.svg"></a></li>
             <li><a href="#"><img src="./resources/images/ic-product-detail.svg"></a></li>
             <li><a href="#"><img src="./resources/images/ic-about-us.svg"></a></li>
-            <li><a href="#" class="buttonm">Join us</a></li>
+            <li><a href="#" class="button">Join us</a></li>
           </ul>
         </nav>
       </div>
@@ -51,16 +50,14 @@
     </div>
 
     <!-- Features Section -->
-    <div id="features-section">
+    <div class="features-section flex-row">
       <div class="feature">
-        <div class="center">
-          <div class="image-container">
-            <img src="./resources/images/feature-1.png">
-          </div>
-          <div class="content2">
-            <h2>Advanced, automatic, instant</h2>
-            <h3>Shutter speed, apperture and flash output adjust automatically</h3>
-          </div>
+        <div class="image-container">
+          <img src="./resources/images/feature-1.png">
+        </div>
+        <div class="content2">
+          <h2>Advanced, automatic, instant</h2>
+          <h3>Shutter speed, apperture and flash output adjust automatically</h3>
         </div>
       </div>
       <div class="feature">
@@ -81,30 +78,55 @@
         <h3>Feed your creativity with 20 different filter designed by our eclectic in-house photographers!</h3>
       </div>
       <div class="images">
-        <div class="image-container">
-          <img src="./resources/images/filter-1.png">
+        <div class="col">
+          <div class="img">
+            <img src="resources/images/p1.jpg" alt="">
+          </div>
+          <div class="img">
+            <img src="resources/images/p2.jpg" alt="">
+          </div>
+          <div class="img">
+            <img src="resources/images/p3.jpg" alt="">
+          </div>
         </div>
-        <div class="image-container">
-          <img src="./resources/images/filter-2.png">
+        <div class="col">
+          <div class="img">
+            <img src="resources/images/p4.jpg" alt="">
+          </div>
+          <div class="img">
+            <img src="resources/images/p5.jpg" alt="">
+          </div>
+          <div class="img">
+            <img src="resources/images/p6.jpg" alt="">
+          </div>
         </div>
-        <div class="image-container">
-          <img src="./resources/images/filter-3.png">
-        </div>
-        <div class="image-container extra">
-          <img src="./resources/images/filter-4.png">
+        <div class="col">
+          <div class="img">
+            <img src="resources/images/p7.jpg" alt="">
+          </div>
+          <div class="img">
+            <img src="resources/images/p8.jpg" alt="">
+          </div>
+          <div class="img">
+            <img src="resources/images/p9.jpg" alt="">
+          </div>
+          <div class="img">
+            <img src="resources/images/p10.jpg" alt="">
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Quote Section -->
     <div class="quotes-section">
-      <p>“It’s truly something that could create a brand new photography Renaissance” <img src="./resources/images/photography-logo.png"/></p>
+      <p>“It’s truly something that could create a brand new photography Renaissance”</p>
+      <img src="./resources/images/photography-logo.png"/>
     </div>
 
     <!-- Footer Section -->
     <footer>
-      <p class="copyright">© 2016  Fotomatic, All Rights Reserved</p>
-      <p>Designed in NYC</p>
+      <p class="copyright">&copy 2020  Fotomatic, All Rights Reserved</p>
+      <p>Designed in Jasmine Street</p>
     </footer>
   </body>
 </html>

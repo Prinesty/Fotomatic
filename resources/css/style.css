@@ -4,6 +4,12 @@ html {
   font-size: 16px;
 }
 
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* Header */
 header {
   position: fixed;
@@ -15,17 +21,19 @@ header {
 
 .content ul {
   display: flex;
-  padding: 1rem;
+}
+
+h1 a {
+  padding-left: 2rem;
 }
 
 .content .logo {
   font-weight: bold;
   padding-left: 1rem;
-  padding-right: 50rem;
 }
 
 .content li {
-  padding-left: 2rem;
+  padding: 1rem;
 }
 
 .content .icon {
@@ -101,8 +109,7 @@ p span {
 }
 
 /* Featured Section*/
-#features-section {
-  display: flex;
+.features-section {
   justify-content: space-between;
   background-color: #f3f3f3;
   padding: 5rem;
@@ -110,7 +117,6 @@ p span {
 
 .feature {
   background-color: white;
-  border: solid 1px teal;
   padding: 2rem;
   margin: 0 1.2rem;
   text-align: center;
@@ -125,7 +131,7 @@ p span {
 .feature .content2 {
   line-height: 1.2;
   margin-top: 2.5rem;
-  height: 7.2rem;
+  height: auto;
 }
 
 .feature h2 {
@@ -150,6 +156,7 @@ p span {
   max-width: 100%;
 }
 
+
 /* Filter Section */
 #filters-section {
   background-color: #4A4A4A;
@@ -157,28 +164,41 @@ p span {
   text-align: center;
 }
 
-#filters-section .content3 h2 {
-  opacity: 100%;
+ .content3 h2 {
   font-size: 2.25rem;
-  font-weight:bold;
+  font-weight: bold;
   padding-top: 4rem;
+  padding: 4rem 1rem 1rem 1rem;
 }
 
-#filters-section .content3 h3 {
+ .content3 h3 {
   font-size: 1rem;
   font-weight: lighter;
   line-height: 1.4;
-  padding-bottom: 4rem;
+  padding: 1rem 1rem 4rem 1rem;
 }
 
 .images {
   display: flex;
-  padding: 0 1% 4rem 1%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.col img {
+  margin: 10px auto;
+  height: auto;
+  width: auto;
 }
 
 /*Quotes Section*/
 .quotes-section {
-  padding: 5rem 0;
+  padding: 5rem 2rem;
   text-align: center;
   font-size: 1.875rem;
   font-family: "Palatino", serif;
@@ -187,6 +207,7 @@ p span {
 }
 
 .quotes-section img {
+  padding-top: 2rem;
   height: 2rem;
 }
 
@@ -195,30 +216,84 @@ footer {
   background-color: #9B9B9B;
   padding: 1.5rem 2rem;
   display: flex;
+  justify-content: space-between;
   font-size: 0.75rem;
   color: white;
 }
 
-footer .copyright {
-  flex-grow: 1;
+/** media queries **/
+@media only screen and (max-width: 720px) {
+  #mobile {
+    visibility: visible;
+  }
+
+  #desktop {
+    visibility: hidden;
+  }
+
+  .sign-up-section {
+    height: 35rem;
+  }
+
+  .content1 {
+    position: relative;
+    top: 10rem;
+    width: 15rem;
+    height: 20rem;
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .content1 .striking {
+    font-size: 1.84rem;
+    padding-top: 1rem;
+  }
+
+  .content1 p {
+    font-size: 1rem;
+    padding-top: 2rem;
+    line-height: 1.5;
+  }
+
+  .content1 .button {
+    width: 250px;
+    height: 64px;
+  }
+
+  p.button {
+    font-size: 1.2rem;
+  }
+
+  .features-section {
+    flex-direction: column;
+  }
+
+  .content3 h2 {
+   font-size: 1.7rem;
+ }
+
+   footer {
+     display: block;
+     text-align: center;
+   }
+
+   p.copyright {
+     padding: 2rem;
+   }
 }
 
-/*Hidden Text Starts and Max and Min Screens*/
-
-#tablet {
-  display: none;
+@media only screen and (max-width: 960px) {
+  .feature .content2 h2 {
+    font-size: 1.5rem;
+  }
 }
 
-#mobile {
-  display: none;
-}
+@media only screen and (min-width: 720px) and (max-width: 1600px) {
+  #mobile {
+    visibility: hidden;
+  }
 
-#tablet .button {
-  background-color: #9dc20b;
-  border: solid 1px none;
-  border-radius: 4px;
-  color: white;
-  padding: .3rem .5rem;
+  #desktop {
+    visibility: visible;
+  }
 }
-
-/*Hidden Text End */

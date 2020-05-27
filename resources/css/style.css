@@ -10,6 +10,12 @@ html {
   align-items: center;
 }
 
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 /* Header */
 header {
   position: fixed;
@@ -17,10 +23,6 @@ header {
   width: 100%;
   background-color: white;
   border-bottom: 1px solid #c6c1c1;
-}
-
-.content ul {
-  display: flex;
 }
 
 h1 a {
@@ -231,6 +233,10 @@ footer {
     visibility: hidden;
   }
 
+  .iphone {
+    visibility: hidden;
+  }
+
   .sign-up-section {
     height: 35rem;
   }
@@ -295,5 +301,23 @@ footer {
 
   #desktop {
     visibility: visible;
+  }
+
+  .iphone {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .iphone {
+    visibility: visible;
+  }
+
+  #mobile {
+    visibility: hidden;
+  }
+
+  #desktop {
+    visibility: hidden;
   }
 }

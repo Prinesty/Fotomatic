@@ -308,7 +308,11 @@ footer {
   }
 }
 
-@media only screen and (max-width: 400px){
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
   .iphone {
     visibility: visible;
   }
@@ -319,5 +323,13 @@ footer {
 
   #desktop {
     visibility: hidden;
+  }
+
+  nav {
+    padding: 2rem 0;
+  }
+
+  .content img {
+    height: 3rem;
   }
 }

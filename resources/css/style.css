@@ -330,6 +330,10 @@ and (orientation: portrait) {
   }
 
   .content img {
-    height: 3rem;
+    height: 4rem;
+  }
+
+  .content li {
+    margin: 0 1rem;
   }
 }

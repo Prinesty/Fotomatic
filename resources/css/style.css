@@ -10,12 +10,6 @@ html {
   align-items: center;
 }
 
-.flex-around {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
 /* Header */
 header {
   position: fixed;
@@ -25,20 +19,20 @@ header {
   border-bottom: 1px solid #c6c1c1;
 }
 
-h1 a {
+.menu h1 {
   padding-left: 2rem;
 }
 
-.content .logo {
+.menu .logo {
   font-weight: bold;
   padding-left: 1rem;
 }
 
-.content li {
+.menu li {
   padding: 1rem;
 }
 
-.content .icon {
+.menu .icon {
   width: 0.8rem;
   padding-left: 0.5rem;
 }
@@ -52,20 +46,19 @@ a {
 #sign-up {
   position: relative;
   top: 3rem;
+  width: auto;
 }
 
 .sign-up-section {
   background-image: url("../images/banner-landingpage.jpg");
-  display: flex;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  align-items: flex-start;
   height: 40rem;
 }
 
-.content1 {
-  position: relative;
+.join {
+  position: absolute;
   top: 14rem;
   left: 10%;
   padding: 0 5rem 2.5rem 5rem;
@@ -79,18 +72,18 @@ a {
   color: white;
 }
 
-.content1 .striking {
+.join h1 {
   font-size: 3rem;
   font-family: "Rubik";
 }
 
-.content1 .cursive {
+.join h2 {
   font-size: 2rem;
   font-family: "Damion";
   padding-top: 2rem;
 }
 
-.content1 p {
+.join p {
   font-size: 1.25rem;
   font-family: "Roboto";
   padding-top: 0.75rem;
@@ -100,7 +93,7 @@ p span {
   font-weight: bold;
 }
 
-.content1 .button {
+.join .button {
   width: 408px;
   height: 64px;
   background-color: #4A4A4A;
@@ -225,15 +218,15 @@ footer {
 
 /** media queries **/
 @media only screen and (max-width: 720px) {
-  #mobile {
+  #minmax {
     visibility: visible;
   }
 
-  #desktop {
+  #laptop {
     visibility: hidden;
   }
 
-  .iphone {
+  #iphone {
     visibility: hidden;
   }
 
@@ -241,8 +234,8 @@ footer {
     height: 35rem;
   }
 
-  .content1 {
-    position: relative;
+  .join {
+    position: absolute;
     top: 10rem;
     width: 15rem;
     height: 20rem;
@@ -250,18 +243,18 @@ footer {
     line-height: 1;
   }
 
-  .content1 .striking {
+  .join h1 {
     font-size: 1.84rem;
     padding-top: 1rem;
   }
 
-  .content1 p {
+  .join p {
     font-size: 1rem;
     padding-top: 2rem;
     line-height: 1.5;
   }
 
-  .content1 .button {
+  .join .button {
     width: 250px;
     height: 64px;
   }
@@ -295,15 +288,15 @@ footer {
 }
 
 @media only screen and (min-width: 720px) and (max-width: 1600px) {
-  #mobile {
+  #minmax {
     visibility: hidden;
   }
 
-  #desktop {
+  #laptop {
     visibility: visible;
   }
 
-  .iphone {
+  #iphone {
     visibility: hidden;
   }
 }
@@ -313,15 +306,15 @@ and (min-device-width: 375px)
 and (max-device-width: 667px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: portrait) {
-  .iphone {
+  #iphone {
     visibility: visible;
   }
 
-  #mobile {
+  #minmax {
     visibility: hidden;
   }
 
-  #desktop {
+  #laptop {
     visibility: hidden;
   }
 
@@ -329,11 +322,23 @@ and (orientation: portrait) {
     padding: 2rem 0;
   }
 
-  .content img {
+  .menu img {
     height: 4rem;
   }
 
-  .content li {
+  .menu li {
     margin: 0 1rem;
+  }
+
+  .join {
+    display: none;
+  }
+
+  .features-section {
+    flex-direction: column;
+  }
+
+  .feature {
+    width: 100%;
   }
 }

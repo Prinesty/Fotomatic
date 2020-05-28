@@ -10,6 +10,13 @@ html {
   align-items: center;
 }
 
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+
 /* Header */
 header {
   position: fixed;
@@ -159,14 +166,14 @@ p span {
   text-align: center;
 }
 
- .content3 h2 {
+ .filter h2 {
   font-size: 2.25rem;
   font-weight: bold;
   padding-top: 4rem;
   padding: 4rem 1rem 1rem 1rem;
 }
 
- .content3 h3 {
+ .filter h3 {
   font-size: 1rem;
   font-weight: lighter;
   line-height: 1.4;
@@ -189,6 +196,14 @@ p span {
   margin: 10px auto;
   height: auto;
   width: auto;
+}
+
+#iphone-images .filter p {
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
+  text-align: center;
+  font-size: 0.75rem;
 }
 
 /*Quotes Section*/
@@ -230,6 +245,10 @@ footer {
     visibility: hidden;
   }
 
+  #iphone-images {
+    display: none;
+  }
+
   .sign-up-section {
     height: 35rem;
   }
@@ -267,7 +286,7 @@ footer {
     flex-direction: column;
   }
 
-  .content3 h2 {
+  .filter h2 {
    font-size: 1.7rem;
  }
 
@@ -298,6 +317,10 @@ footer {
 
   #iphone {
     visibility: hidden;
+  }
+
+  #iphone-images {
+    display: none;
   }
 }
 
@@ -341,4 +364,41 @@ and (orientation: portrait) {
   .feature {
     width: 100%;
   }
+
+  .filter h2 {
+   font-size: 3rem;
+ }
+
+  .filter h3 {
+   font-size: 1.5rem;
+ }
+
+ #iphone-images {
+   display: contents;
+ }
+
+ .images {
+   display: none;
+ }
+
+ .img img {
+   padding: 1rem;
+ }
+
+ .quotes-section img {
+   height: 3rem;
+ }
+
+ footer {
+   display: block;
+   text-align: center;
+ }
+
+ p.copyright {
+   padding: 3rem;
+ }
+
+ footer p {
+   font-size: 0.65rem;
+ }
 }

@@ -370,7 +370,7 @@ and (orientation: portrait) {
  }
 
   .filter h3 {
-   font-size: 1.5rem;
+   font-size: 1.6rem;
  }
 
  #iphone-images {
@@ -389,6 +389,11 @@ and (orientation: portrait) {
    height: 3rem;
  }
 
+ .quotes-section {
+   font-size: 2rem;
+   font-weight: bold;
+ }
+
  footer {
    display: block;
    text-align: center;
@@ -399,6 +404,6 @@ and (orientation: portrait) {
  }
 
  footer p {
-   font-size: 0.65rem;
+   font-size: 0.8rem;
  }
 }
